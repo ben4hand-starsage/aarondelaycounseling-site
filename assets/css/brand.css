@@ -160,7 +160,7 @@ em{font-style:italic}
 .panel .eyebrow{display:block;margin-bottom:12px}
 .panel h3{font-family:var(--serif);font-style:italic;font-weight:500;font-size:1.7rem;margin-bottom:14px}
 .panel p{color:var(--ink-2);max-width:56ch}
-.pullquote{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.2;letter-spacing:-.01em;max-width:22ch}
+.pullquote{font-family:var(--serif);font-weight:400;font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.2;letter-spacing:-.01em;max-width:22ch;/* hang the opening mark so line one aligns with the lines beneath it */text-indent:-.4em}
 .pullquote .mk{color:var(--clay)}
 .attrib{margin-top:20px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);font-weight:600}
 
