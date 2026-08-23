@@ -25,7 +25,13 @@ var SITE = {
 
   /* Where to send people after a successful opt-in.
      Leave as-is to use the built-in /thanks/ page.                */
-  THANKS_URL: "/thanks/"
+  THANKS_URL: "/thanks/",
+
+  /* Coaching enquiry form endpoint (Formspree, Basin, Netlify, etc).
+     Leave as REPLACE_ME and the form falls back to opening the
+     visitor's own mail client addressed to CONTACT_EMAIL, which
+     needs no account and keeps the message out of a third party.   */
+  COACHING_FORM_ACTION: "REPLACE_ME_COACHING_FORM_ACTION"
 };
 
 (function () {
@@ -106,6 +112,59 @@ var SITE = {
     form.addEventListener("submit", function () {
       var btn = form.querySelector("button[type=submit]");
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+    });
+  });
+
+  /* ---------- Coaching enquiry form ---------- */
+  document.querySelectorAll("form[data-enquiry]").forEach(function (form) {
+    var note = form.querySelector(".form-note");
+
+    var say = function (msg) {
+      if (note) { note.textContent = msg; note.classList.add("show"); }
+    };
+
+    /* A real endpoint is configured: post to it normally. */
+    if (!unset(SITE.COACHING_FORM_ACTION)) {
+      form.setAttribute("action", SITE.COACHING_FORM_ACTION);
+      form.setAttribute("method", "post");
+      return;
+    }
+
+    /* No endpoint yet. Hand the message to the visitor's own mail client
+       so nothing is stored by a third party and no account is needed. */
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (unset(SITE.CONTACT_EMAIL)) {
+        say("This form isn't connected yet. Add CONTACT_EMAIL in assets/js/site.js, or a form endpoint in COACHING_FORM_ACTION.");
+        return;
+      }
+
+      var get = function (n) {
+        var el = form.querySelector('[name="' + n + '"]');
+        return el ? el.value.trim() : "";
+      };
+
+      var name = get("name"), email = get("email"),
+          where = get("location"), message = get("message");
+
+      if (!name || !email || !message) {
+        say("Please fill in your name, your email, and a little about why you're reaching out.");
+        return;
+      }
+
+      var body =
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Where: " + (where || "not given") + "\n\n" +
+        message + "\n";
+
+      window.location.href =
+        "mailto:" + SITE.CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent("Coaching enquiry from " + name) +
+        "&body=" + encodeURIComponent(body);
+
+      say("Your email app should be opening with the message ready. Press send and it comes straight to Aaron. If nothing happened, email " + SITE.CONTACT_EMAIL + " directly.");
     });
   });
 
