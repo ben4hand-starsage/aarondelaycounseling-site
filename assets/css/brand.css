@@ -337,8 +337,8 @@ em{font-style:italic}
 /* ---------- BOOK COVER SHOT ---------- */
 /* The mockup carries its own background and shadow, so it wants a clean
    frame rather than a card around it. */
-.book-shot{margin:0}
-.book-shot img{
+.book-shot,.shot{margin:0}
+.book-shot img,.shot img{
   display:block;width:100%;height:auto;border-radius:4px;
   box-shadow:0 30px 70px -40px rgba(38,32,25,.55);
 }
@@ -403,4 +403,11 @@ em{font-style:italic}
 
 @media(max-width:640px){
   .field input,.field textarea{font-size:16px} /* stops iOS zooming on focus */
+}
+
+/* ---------- PRODUCT MOCKUP ---------- */
+/* On a phone the mockup stacks under the copy, where a full-width image
+   would push everything else off the screen for no gain. */
+@media(max-width:860px){
+  .shot{max-width:330px;margin:0 auto}
 }
