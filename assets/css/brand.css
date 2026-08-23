@@ -333,3 +333,27 @@ em{font-style:italic}
   .kicker{font-size:.6rem;letter-spacing:.18em}
   .bridge p{padding:34px 0}
 }
+
+/* ---------- BOOK COVER SHOT ---------- */
+/* The mockup carries its own background and shadow, so it wants a clean
+   frame rather than a card around it. */
+.book-shot{margin:0}
+.book-shot img{
+  display:block;width:100%;height:auto;border-radius:4px;
+  box-shadow:0 30px 70px -40px rgba(38,32,25,.55);
+}
+
+.book-split{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+.book-h{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.02em;margin-top:18px}
+.book-fw{
+  margin-top:18px;padding-top:16px;border-top:1px solid var(--line);
+  font-size:.97rem;color:var(--ink-2);
+}
+.book-fw strong{color:var(--ink);font-weight:600}
+.book-fw em{font-style:italic}
+
+@media(max-width:860px){
+  .book-split{grid-template-columns:1fr;gap:34px}
+  /* The cover would otherwise eat a whole phone screen before the copy. */
+  .book-shot{max-width:280px;margin:0 auto}
+}

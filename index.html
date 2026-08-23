@@ -216,23 +216,37 @@
 <!-- ===================== BOOK ===================== -->
 <section class="section" id="book">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Forthcoming</span>
-      <h2>Saying “I Do” Everyday</h2>
-      <p>
-        A book about the vows, not as a ceremony but as a set of daily actions. Foreword by
-        Gary Chapman. It's written; the rest is publishing. Leave your address and I'll tell you
-        when there's real news.
-      </p>
-    </div>
-    <form class="optin" data-optin>
-      <input type="hidden" name="fields[source]" value="home-book-notify">
-      <div class="optin-row">
-        <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
-        <button type="submit">Tell me when it's out</button>
+    <div class="book-split">
+      <figure class="book-shot">
+        <img src="/assets/img/book-cover.jpg"
+             alt="Saying I Do, Everyday by Aaron Delay, foreword by Dr. Gary Chapman. Hardback cover standing on a marble surface."
+             width="960" height="1200" loading="lazy" decoding="async">
+      </figure>
+
+      <div>
+        <span class="eyebrow">Forthcoming</span>
+        <h2 class="book-h">Saying &ldquo;I Do&rdquo; Everyday</h2>
+        <p class="lede mt-m">
+          A book about the vows, not as a ceremony but as a set of daily actions. Each chapter takes
+          one vow and ends with the small daily version of it.
+        </p>
+        <p class="book-fw">
+          Foreword by <strong>Dr. Gary Chapman</strong>, author of <em>The Five Love Languages</em>.
+        </p>
+        <p class="mt-s" style="color:var(--ink-2)">
+          It's written. The rest is publishing. Leave your address and I'll tell you when there's
+          real news, and nothing in between.
+        </p>
+        <form class="optin mt-m" data-optin>
+          <input type="hidden" name="fields[source]" value="home-book-notify">
+          <div class="optin-row">
+            <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
+            <button type="submit">Tell me when it's out</button>
+          </div>
+          <div class="form-note" role="status"></div>
+        </form>
       </div>
-      <div class="form-note" role="status"></div>
-    </form>
+    </div>
   </div>
 </section>
 
