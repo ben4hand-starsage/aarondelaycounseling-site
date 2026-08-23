@@ -6,11 +6,10 @@
    ============================================================ */
 
 var SITE = {
-  /* Kit (ConvertKit) form action URL.
-     Find it: Kit → Grow → Landing Pages & Forms → your form →
-     Embed → HTML. Copy the URL inside action="...".
-     Looks like: https://app.kit.com/forms/1234567/subscriptions   */
-  KIT_FORM_ACTION: "REPLACE_ME_KIT_FORM_ACTION",
+  /* MailerLite embedded-form endpoint.
+     Forms > Embedded forms > the form > HTML code, inside action="".
+     Account 2591010, form "Reset opt-in (site-wide)".                */
+  FORM_ACTION: "https://assets.mailerlite.com/jsonp/2591010/forms/196633341769811899/subscribe",
 
   /* Gumroad product URL for the $19 playbook.
      Looks like: https://aarondelay.gumroad.com/l/playbook         */
@@ -80,38 +79,55 @@ var SITE = {
   });
 
   /* ---------- Opt-in forms ---------- */
+  /* MailerLite's endpoint is JSONP: a normal form POST would navigate the
+     visitor to a page of raw JSON. So we send it with fetch in no-cors mode
+     and move them to /thanks/ ourselves. We cannot read a no-cors response,
+     so HTML5 validation is what catches bad input before it is sent. */
   document.querySelectorAll("form[data-optin]").forEach(function (form) {
     var note = form.querySelector(".form-note");
 
-    if (unset(SITE.KIT_FORM_ACTION)) {
+    if (unset(SITE.FORM_ACTION)) {
       form.setAttribute("action", "#");
       form.addEventListener("submit", function (e) {
         e.preventDefault();
         if (note) {
           note.textContent =
-            "This form isn't connected to Kit yet. Add the Kit form action URL in assets/js/site.js (KIT_FORM_ACTION) and it will start delivering the PDF automatically.";
+            "This form isn't connected yet. Add the MailerLite form action URL in assets/js/site.js (FORM_ACTION).";
           note.classList.add("show");
         }
       });
       return;
     }
 
-    form.setAttribute("action", SITE.KIT_FORM_ACTION);
+    form.setAttribute("action", SITE.FORM_ACTION);
     form.setAttribute("method", "post");
 
-    /* Kit redirects to the thank-you page configured inside Kit.
-       This hidden field is a belt-and-braces fallback. */
-    if (!form.querySelector('input[name="redirect_url"]')) {
-      var r = document.createElement("input");
-      r.type = "hidden";
-      r.name = "redirect_url";
-      r.value = window.location.origin + SITE.THANKS_URL;
-      form.appendChild(r);
-    }
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      if (!form.checkValidity()) { form.reportValidity(); return; }
 
-    form.addEventListener("submit", function () {
       var btn = form.querySelector("button[type=submit]");
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+
+      var done = false;
+      var go = function () {
+        if (done) { return; }
+        done = true;
+        window.location.href = SITE.THANKS_URL;
+      };
+
+      /* URLSearchParams, not FormData: FormData sends multipart/form-data
+         and MailerLite's endpoint only accepts url-encoded bodies. It
+         silently accepts the request and creates no subscriber otherwise. */
+      fetch(SITE.FORM_ACTION, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(new FormData(form)).toString()
+      }).then(go).catch(go);
+
+      /* Never strand someone on a disabled button if the network hangs. */
+      setTimeout(go, 3500);
     });
   });
 

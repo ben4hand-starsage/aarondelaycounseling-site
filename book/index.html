@@ -58,9 +58,11 @@
         </p>
 
         <form class="optin mt-m" data-optin>
-          <input type="hidden" name="fields[source]" value="book-page">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <input type="hidden" name="fields[signup_source]" value="book-page">
           <div class="optin-row">
-            <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
+            <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
             <button type="submit">Tell me when it's out</button>
           </div>
           <p class="fineprint">

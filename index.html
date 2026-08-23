@@ -46,9 +46,11 @@
         </p>
 
         <form class="optin" data-optin>
-          <input type="hidden" name="fields[source]" value="home-hero">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <input type="hidden" name="fields[signup_source]" value="home-hero">
           <div class="optin-row">
-            <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
+            <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
             <button type="submit">Get the free reset</button>
           </div>
           <p class="fineprint">
@@ -237,9 +239,11 @@
           real news, and nothing in between.
         </p>
         <form class="optin mt-m" data-optin>
-          <input type="hidden" name="fields[source]" value="home-book-notify">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <input type="hidden" name="fields[signup_source]" value="home-book-notify">
           <div class="optin-row">
-            <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
+            <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
             <button type="submit">Tell me when it's out</button>
           </div>
           <div class="form-note" role="status"></div>

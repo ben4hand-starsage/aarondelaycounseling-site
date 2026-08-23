@@ -42,12 +42,14 @@
         </p>
 
         <form class="optin" data-optin style="margin-top:36px">
-          <input type="hidden" name="fields[source]" value="reset-landing">
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+          <input type="hidden" name="fields[signup_source]" value="reset-landing">
           <div class="optin-row">
-            <input type="text" name="fields[first_name]" placeholder="First name" aria-label="First name" autocomplete="given-name">
+            <input type="text" name="fields[name]" placeholder="First name" aria-label="First name" autocomplete="given-name">
           </div>
           <div class="optin-row" style="margin-top:10px">
-            <input type="email" name="email_address" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
+            <input type="email" name="fields[email]" placeholder="Your email address" aria-label="Email address" autocomplete="email" required>
             <button type="submit">Send it to me</button>
           </div>
           <p class="fineprint">
