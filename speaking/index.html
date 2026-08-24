@@ -41,7 +41,7 @@
       years counseling pastors and church staff. This is the part of the work I like most.
     </p>
     <div class="btns mt-m">
-      <a class="btn btn-primary" data-mailto="Marriage night availability" href="#">Ask about a date</a>
+      <a class="btn btn-primary" href="#enquire">Ask about a date</a>
       <a class="btn btn-text" href="#what">What the night looks like</a>
     </div>
   </div>
@@ -181,9 +181,64 @@
       </details>
     </div>
 
-    <div class="btns mt-l">
-      <a class="btn btn-primary" data-mailto="Marriage night availability" href="#">Ask about a date</a>
+  </div>
+</section>
+
+<section class="section" id="enquire">
+  <div class="wrap-narrow">
+    <div class="sec-head">
+      <span class="eyebrow">Ask about a date</span>
+      <h2>Tell me about your church.</h2>
+      <p>
+        Nothing formal. Enough that I can tell you straight away whether a date works and what the
+        night would look like for your people.
+      </p>
     </div>
+
+    <form class="enquiry" data-enquiry data-enquiry-kind="Speaking" novalidate>
+      <div class="field">
+        <label for="sp-name">Your name</label>
+        <input id="sp-name" name="name" type="text" autocomplete="name" required>
+      </div>
+
+      <div class="field">
+        <label for="sp-email">Email</label>
+        <input id="sp-email" name="email" type="email" autocomplete="email" required>
+      </div>
+
+      <div class="field">
+        <label for="sp-church">Church</label>
+        <input id="sp-church" name="church" type="text" autocomplete="organization" required>
+      </div>
+
+      <div class="field">
+        <label for="sp-where">Where are you? <span class="opt">City and state</span></label>
+        <input id="sp-where" name="location" type="text" autocomplete="address-level2" required>
+      </div>
+
+      <div class="field">
+        <label for="sp-when">Dates you have in mind <span class="opt">Rough is fine</span></label>
+        <input id="sp-when" name="dates" type="text" required>
+      </div>
+
+      <div class="field">
+        <label for="sp-size">Roughly how many couples? <span class="opt">A guess is fine</span></label>
+        <input id="sp-size" name="size" type="text">
+      </div>
+
+      <div class="field">
+        <label for="sp-more">Anything else worth knowing</label>
+        <textarea id="sp-more" name="message" rows="5"></textarea>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Ask about a date</button>
+
+      <p class="fineprint">
+        There's no fee for the night itself. Travel is the only cost I'd ask a church to cover, and
+        we'd agree that before anything is booked.
+      </p>
+      <div class="form-note" role="status"></div>
+    </form>
   </div>
 </section>
 

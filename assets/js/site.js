@@ -26,18 +26,26 @@ var SITE = {
      Leave as-is to use the built-in /thanks/ page.                */
   THANKS_URL: "/thanks/",
 
-  /* Coaching enquiry form endpoint.
-     Formspree: https://formspree.io/f/xxxxxxxx
-     Leave as REPLACE_ME and the form falls back to opening the
-     visitor's own mail client addressed to CONTACT_EMAIL. That
-     fallback needs no account, but it strands anyone without a mail
-     client configured, so it is a stopgap rather than a solution.   */
-  COACHING_FORM_ACTION: "https://formspree.io/f/xrpzwpnb",
+  /* Enquiry forms, keyed by the form's data-enquiry-kind attribute.
+     Formspree endpoints look like https://formspree.io/f/xxxxxxxx
 
-  /* Where we send people after a successful enquiry. The redirect is
-     done in this file, not by the form service, so this stays a plain
-     site-relative path.                                              */
-  COACHING_THANKS_URL: "/coaching-thanks/"
+     "thanks" is a plain site-relative path because the redirect happens
+     in this file, not at the form service.
+
+     Leave an action as REPLACE_ME and that form falls back to opening
+     the visitor's own mail client. The fallback needs no account, but
+     it strands anyone without a mail client configured, so treat it as
+     a stopgap rather than a solution.                                */
+  ENQUIRY: {
+    Coaching: {
+      action: "https://formspree.io/f/xrpzwpnb",
+      thanks: "/coaching-thanks/"
+    },
+    Speaking: {
+      action: "https://formspree.io/f/xbgrvogj",
+      thanks: "/speaking-thanks/"
+    }
+  }
 };
 
 (function () {
@@ -138,13 +146,18 @@ var SITE = {
     });
   });
 
-  /* ---------- Coaching enquiry form ---------- */
+  /* ---------- Enquiry forms (coaching, speaking) ---------- */
   document.querySelectorAll("form[data-enquiry]").forEach(function (form) {
     var note = form.querySelector(".form-note");
 
     var say = function (msg) {
       if (note) { note.textContent = msg; note.classList.add("show"); }
     };
+
+    /* Which enquiry this is. Unknown kinds fall through to the mailto
+       fallback rather than posting somewhere arbitrary. */
+    var kind = form.getAttribute("data-enquiry-kind") || "Coaching";
+    var cfg = (SITE.ENQUIRY && SITE.ENQUIRY[kind]) || {};
 
     /* A real endpoint is configured.
 
@@ -157,8 +170,8 @@ var SITE = {
        The action and method are still set, so if this script fails to load
        the browser falls back to a native POST. That lands on Formspree's own
        confirmation page, which is worse but is not a dead end. */
-    if (!unset(SITE.COACHING_FORM_ACTION)) {
-      form.setAttribute("action", SITE.COACHING_FORM_ACTION);
+    if (!unset(cfg.action)) {
+      form.setAttribute("action", cfg.action);
       form.setAttribute("method", "post");
 
       form.addEventListener("submit", function (e) {
@@ -173,13 +186,13 @@ var SITE = {
           if (btn) { btn.disabled = false; btn.textContent = label; }
         };
 
-        fetch(SITE.COACHING_FORM_ACTION, {
+        fetch(cfg.action, {
           method: "POST",
           headers: { "Accept": "application/json" },
           body: new FormData(form)
         }).then(function (res) {
           if (res.ok) {
-            window.location.href = SITE.COACHING_THANKS_URL;
+            window.location.href = cfg.thanks;
             return;
           }
           /* Formspree returns the reason in JSON. Surface it rather than a
@@ -209,32 +222,47 @@ var SITE = {
       e.preventDefault();
 
       if (unset(SITE.CONTACT_EMAIL)) {
-        say("This form isn't connected yet. Add CONTACT_EMAIL in assets/js/site.js, or a form endpoint in COACHING_FORM_ACTION.");
+        say("This form isn't connected yet. Add CONTACT_EMAIL in assets/js/site.js, or an endpoint under ENQUIRY." + kind + ".");
         return;
       }
 
-      var get = function (n) {
-        var el = form.querySelector('[name="' + n + '"]');
-        return el ? el.value.trim() : "";
+      /* Build the body from whatever fields this form actually has, so a
+         new field never silently goes missing from the email. */
+      var fields = Array.prototype.slice.call(
+        form.querySelectorAll("input[name], textarea[name], select[name]")
+      );
+
+      var missing = fields.filter(function (el) {
+        return el.required && !el.value.trim();
+      });
+      if (missing.length) {
+        say("Please fill in the required fields before sending.");
+        missing[0].focus();
+        return;
+      }
+
+      var labelFor = function (el) {
+        var lab = form.querySelector('label[for="' + el.id + '"]');
+        if (!lab) { return el.name; }
+        /* Drop the "(optional)" style hint so the email reads cleanly. */
+        var clone = lab.cloneNode(true);
+        var opt = clone.querySelector(".opt");
+        if (opt) { opt.remove(); }
+        return clone.textContent.trim().replace(/\s+/g, " ");
       };
 
-      var name = get("name"), email = get("email"),
-          where = get("location"), message = get("message");
+      var who = "";
+      var body = fields.map(function (el) {
+        var v = el.value.trim();
+        if (el.name === "name") { who = v; }
+        return labelFor(el) + ": " + (v || "not given");
+      }).join("\n") + "\n";
 
-      if (!name || !email || !message) {
-        say("Please fill in your name, your email, and a little about why you're reaching out.");
-        return;
-      }
-
-      var body =
-        "Name: " + name + "\n" +
-        "Email: " + email + "\n" +
-        "Where: " + (where || "not given") + "\n\n" +
-        message + "\n";
+      var name = who;
 
       window.location.href =
         "mailto:" + SITE.CONTACT_EMAIL +
-        "?subject=" + encodeURIComponent("Coaching enquiry from " + name) +
+        "?subject=" + encodeURIComponent(kind + " enquiry" + (name ? " from " + name : "")) +
         "&body=" + encodeURIComponent(body);
 
       say("Your email app should be opening with the message ready. Press send and it comes straight to Aaron. If nothing happened, email " + SITE.CONTACT_EMAIL + " directly.");
