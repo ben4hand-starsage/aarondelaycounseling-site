@@ -177,15 +177,6 @@ em{font-style:italic}
 /* ---------- PRODUCT ---------- */
 .product{display:grid;grid-template-columns:.9fr 1.1fr;gap:44px;align-items:center}
 @media(max-width:860px){.product{grid-template-columns:1fr;gap:30px}}
-.product-visual{
-  background:linear-gradient(150deg,var(--sand),var(--sand-2));
-  border:1px solid var(--line);border-radius:4px;
-  aspect-ratio:3/4;display:grid;place-items:center;padding:40px;text-align:center;box-shadow:var(--shadow);
-}
-.product-visual .pv-eyebrow{font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:var(--stone);font-weight:600;margin-bottom:18px}
-.product-visual .pv-title{font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.1rem);line-height:1.12;font-weight:500}
-.product-visual .pv-title em{font-style:italic;color:var(--clay-deep)}
-.product-visual .pv-foot{margin-top:22px;font-size:.64rem;letter-spacing:.26em;text-transform:uppercase;color:var(--stone);font-weight:600}
 .price{font-family:var(--serif);font-size:2.4rem;color:var(--ink);line-height:1;margin:6px 0 18px}
 .price small{font-size:.85rem;font-family:var(--sans);color:var(--ink-3);letter-spacing:.1em;text-transform:uppercase;margin-left:8px}
 .ticks{list-style:none;margin:20px 0 28px}

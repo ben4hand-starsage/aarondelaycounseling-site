@@ -13,7 +13,7 @@ var SITE = {
 
   /* Gumroad product URL for the $19 playbook.
      Looks like: https://aarondelay.gumroad.com/l/playbook         */
-  GUMROAD_PLAYBOOK_URL: "REPLACE_ME_GUMROAD_URL",
+  GUMROAD_PLAYBOOK_URL: "https://aarontherapy.gumroad.com/l/wrong-person",
 
   /* Instagram profile URL.
      Looks like: https://www.instagram.com/aarondelaycounseling/    */
