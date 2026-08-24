@@ -34,12 +34,10 @@ var SITE = {
      client configured, so it is a stopgap rather than a solution.   */
   COACHING_FORM_ACTION: "https://formspree.io/f/xrpzwpnb",
 
-  /* Where the form service sends people after a successful post.
-     Formspree reads this from a hidden field named "_next". Basin and
-     Web3Forms use "_redirect" and "redirect" respectively, so change
-     COACHING_REDIRECT_FIELD below if you switch provider.            */
-  COACHING_THANKS_URL: "/coaching-thanks/",
-  COACHING_REDIRECT_FIELD: "_next"
+  /* Where we send people after a successful enquiry. The redirect is
+     done in this file, not by the form service, so this stays a plain
+     site-relative path.                                              */
+  COACHING_THANKS_URL: "/coaching-thanks/"
 };
 
 (function () {
@@ -148,27 +146,59 @@ var SITE = {
       if (note) { note.textContent = msg; note.classList.add("show"); }
     };
 
-    /* A real endpoint is configured: post to it normally and let the
-       service redirect to our own thank-you page. The redirect target has
-       to be absolute, because the form service does the redirecting from
-       its own domain, not ours. */
+    /* A real endpoint is configured.
+
+       We submit with fetch rather than letting the browser navigate, and do
+       the redirect ourselves. Formspree ignores the "_next" hidden field, so
+       a native POST strands the visitor on formspree.io looking at someone
+       else's branding. Asking for JSON back also means a failure can be shown
+       in place, on our own page, instead of on their error screen.
+
+       The action and method are still set, so if this script fails to load
+       the browser falls back to a native POST. That lands on Formspree's own
+       confirmation page, which is worse but is not a dead end. */
     if (!unset(SITE.COACHING_FORM_ACTION)) {
       form.setAttribute("action", SITE.COACHING_FORM_ACTION);
       form.setAttribute("method", "post");
 
-      if (!form.querySelector('[name="' + SITE.COACHING_REDIRECT_FIELD + '"]')) {
-        var next = document.createElement("input");
-        next.type = "hidden";
-        next.name = SITE.COACHING_REDIRECT_FIELD;
-        next.value = new URL(SITE.COACHING_THANKS_URL, window.location.origin).href;
-        form.appendChild(next);
-      }
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
 
-      /* Give the button a busy state so nobody double-submits while the
-         POST and redirect are in flight. */
-      form.addEventListener("submit", function () {
         var btn = form.querySelector("button[type=submit]");
+        var label = btn ? btn.textContent : "";
         if (btn) { btn.disabled = true; btn.textContent = "Sending\u2026"; }
+
+        var restore = function () {
+          if (btn) { btn.disabled = false; btn.textContent = label; }
+        };
+
+        fetch(SITE.COACHING_FORM_ACTION, {
+          method: "POST",
+          headers: { "Accept": "application/json" },
+          body: new FormData(form)
+        }).then(function (res) {
+          if (res.ok) {
+            window.location.href = SITE.COACHING_THANKS_URL;
+            return;
+          }
+          /* Formspree returns the reason in JSON. Surface it rather than a
+             generic failure, so a bad email address reads as a bad email
+             address. */
+          return res.json().then(function (data) {
+            var msg = data && data.errors && data.errors.length
+              ? data.errors.map(function (x) { return x.message; }).join(" ")
+              : "Something went wrong sending that.";
+            say(msg + " You can also email " + SITE.CONTACT_EMAIL + " directly.");
+            restore();
+          }).catch(function () {
+            say("Something went wrong sending that. You can also email " + SITE.CONTACT_EMAIL + " directly.");
+            restore();
+          });
+        }).catch(function () {
+          say("That didn't send, which usually means the connection dropped. Try again, or email " + SITE.CONTACT_EMAIL + " directly.");
+          restore();
+        });
       });
       return;
     }
