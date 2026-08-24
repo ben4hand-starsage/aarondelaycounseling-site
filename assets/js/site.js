@@ -20,17 +20,26 @@ var SITE = {
   INSTAGRAM_URL: "https://www.instagram.com/aarondelaytherapy/",
 
   /* Public contact address for speaking enquiries.                */
-  CONTACT_EMAIL: "aarondelaycounseling@gmail.com",
+  CONTACT_EMAIL: "aaron@aarondelaycounseling.com",
 
   /* Where to send people after a successful opt-in.
      Leave as-is to use the built-in /thanks/ page.                */
   THANKS_URL: "/thanks/",
 
-  /* Coaching enquiry form endpoint (Formspree, Basin, Netlify, etc).
+  /* Coaching enquiry form endpoint.
+     Formspree: https://formspree.io/f/xxxxxxxx
      Leave as REPLACE_ME and the form falls back to opening the
-     visitor's own mail client addressed to CONTACT_EMAIL, which
-     needs no account and keeps the message out of a third party.   */
-  COACHING_FORM_ACTION: "REPLACE_ME_COACHING_FORM_ACTION"
+     visitor's own mail client addressed to CONTACT_EMAIL. That
+     fallback needs no account, but it strands anyone without a mail
+     client configured, so it is a stopgap rather than a solution.   */
+  COACHING_FORM_ACTION: "https://formspree.io/f/xrpzwpnb",
+
+  /* Where the form service sends people after a successful post.
+     Formspree reads this from a hidden field named "_next". Basin and
+     Web3Forms use "_redirect" and "redirect" respectively, so change
+     COACHING_REDIRECT_FIELD below if you switch provider.            */
+  COACHING_THANKS_URL: "/coaching-thanks/",
+  COACHING_REDIRECT_FIELD: "_next"
 };
 
 (function () {
@@ -139,10 +148,28 @@ var SITE = {
       if (note) { note.textContent = msg; note.classList.add("show"); }
     };
 
-    /* A real endpoint is configured: post to it normally. */
+    /* A real endpoint is configured: post to it normally and let the
+       service redirect to our own thank-you page. The redirect target has
+       to be absolute, because the form service does the redirecting from
+       its own domain, not ours. */
     if (!unset(SITE.COACHING_FORM_ACTION)) {
       form.setAttribute("action", SITE.COACHING_FORM_ACTION);
       form.setAttribute("method", "post");
+
+      if (!form.querySelector('[name="' + SITE.COACHING_REDIRECT_FIELD + '"]')) {
+        var next = document.createElement("input");
+        next.type = "hidden";
+        next.name = SITE.COACHING_REDIRECT_FIELD;
+        next.value = new URL(SITE.COACHING_THANKS_URL, window.location.origin).href;
+        form.appendChild(next);
+      }
+
+      /* Give the button a busy state so nobody double-submits while the
+         POST and redirect are in flight. */
+      form.addEventListener("submit", function () {
+        var btn = form.querySelector("button[type=submit]");
+        if (btn) { btn.disabled = true; btn.textContent = "Sending\u2026"; }
+      });
       return;
     }
 
