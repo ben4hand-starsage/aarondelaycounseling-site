@@ -37,16 +37,16 @@ jobs:
             exit 1
           fi
           python3 .github/scripts/fetch_analytics.py \
-            --days 30 --out pulse-8f3ac2/data.json
+            --days 30 --out siteanalytics/data.json
 
       - name: Commit if the numbers moved
         run: |
-          if git diff --quiet -- pulse-8f3ac2/data.json; then
+          if git diff --quiet -- siteanalytics/data.json; then
             echo "No change in the numbers; nothing to commit."
             exit 0
           fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add pulse-8f3ac2/data.json
+          git add siteanalytics/data.json
           git commit -m "Refresh analytics snapshot"
           git push
