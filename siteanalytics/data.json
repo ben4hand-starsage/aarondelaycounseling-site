@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-05T15:11:50Z",
+  "generated_at": "2026-09-06T15:26:51Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 120,
+    "pageviews": 150,
     "visits": 90
   },
   "previous": {
@@ -35,6 +35,11 @@
       "date": "2026-09-04",
       "pageviews": 20,
       "visits": 20
+    },
+    {
+      "date": "2026-09-06",
+      "pageviews": 30,
+      "visits": 0
     }
   ],
   "pages": [
@@ -45,16 +50,22 @@
       "visits": 80
     },
     {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 20,
+      "visits": 0
+    },
+    {
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
+      "pageviews": 20,
+      "visits": 0
+    },
+    {
       "name": "/analytics",
       "label": "/analytics",
       "pageviews": 10,
       "visits": 10
-    },
-    {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 10,
-      "visits": 0
     },
     {
       "name": "/playbooks/",
@@ -71,16 +82,16 @@
   ],
   "referrers": [
     {
+      "name": "aarondelaycounseling.com",
+      "label": "aarondelaycounseling.com",
+      "pageviews": 60,
+      "visits": 0
+    },
+    {
       "name": "(direct)",
       "label": "(direct)",
       "pageviews": 50,
       "visits": 50
-    },
-    {
-      "name": "aarondelaycounseling.com",
-      "label": "aarondelaycounseling.com",
-      "pageviews": 30,
-      "visits": 0
     },
     {
       "name": "l.instagram.com",
@@ -99,22 +110,22 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 120,
+      "pageviews": 150,
       "visits": 90
     }
   ],
   "devices": [
     {
+      "name": "mobile",
+      "label": "mobile",
+      "pageviews": 90,
+      "visits": 40
+    },
+    {
       "name": "desktop",
       "label": "desktop",
       "pageviews": 60,
       "visits": 50
-    },
-    {
-      "name": "mobile",
-      "label": "mobile",
-      "pageviews": 60,
-      "visits": 40
     }
   ],
   "browsers": [
@@ -127,13 +138,13 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 30,
+      "pageviews": 50,
       "visits": 20
     },
     {
       "name": "Instagram",
       "label": "Instagram",
-      "pageviews": 10,
+      "pageviews": 20,
       "visits": 0
     },
     {
@@ -157,7 +168,7 @@
   ],
   "funnel": {
     "reset_views": 0,
-    "thanks_views": 10,
+    "thanks_views": 20,
     "rate": null
   }
 }
