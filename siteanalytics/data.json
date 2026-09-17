@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-16T16:52:59Z",
+  "generated_at": "2026-09-17T16:58:16Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 320,
-    "visits": 180
+    "pageviews": 330,
+    "visits": 190
   },
   "previous": {
     "pageviews": 0,
@@ -75,6 +75,11 @@
       "date": "2026-09-16",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-09-17",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
@@ -91,14 +96,14 @@
       "visits": 0
     },
     {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 20,
-      "visits": 0
-    },
-    {
       "name": "/playbooks/",
       "label": "Playbooks ($19)",
+      "pageviews": 30,
+      "visits": 10
+    },
+    {
+      "name": "/thanks/",
+      "label": "Reset delivered",
       "pageviews": 20,
       "visits": 0
     },
@@ -123,16 +128,16 @@
       "visits": 0
     },
     {
-      "name": "l.instagram.com",
-      "label": "l.instagram.com",
+      "name": "(direct)",
+      "label": "(direct)",
       "pageviews": 90,
       "visits": 90
     },
     {
-      "name": "(direct)",
-      "label": "(direct)",
-      "pageviews": 80,
-      "visits": 80
+      "name": "l.instagram.com",
+      "label": "l.instagram.com",
+      "pageviews": 90,
+      "visits": 90
     },
     {
       "name": "www.facebook.com",
@@ -145,8 +150,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 310,
-      "visits": 170
+      "pageviews": 320,
+      "visits": 180
     },
     {
       "name": "CA",
@@ -159,8 +164,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 250,
-      "visits": 120
+      "pageviews": 260,
+      "visits": 130
     },
     {
       "name": "desktop",
@@ -191,8 +196,8 @@
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 30,
-      "visits": 30
+      "pageviews": 40,
+      "visits": 40
     },
     {
       "name": "Safari",
