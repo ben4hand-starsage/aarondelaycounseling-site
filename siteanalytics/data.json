@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-19T15:52:48Z",
+  "generated_at": "2026-09-20T16:03:46Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 340,
-    "visits": 190
+    "pageviews": 350,
+    "visits": 200
   },
   "previous": {
     "pageviews": 0,
@@ -85,6 +85,11 @@
       "date": "2026-09-19",
       "pageviews": 10,
       "visits": 0
+    },
+    {
+      "date": "2026-09-20",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
@@ -119,6 +124,12 @@
       "visits": 10
     },
     {
+      "name": "/free-b0da10/",
+      "label": "/free-b0da10/",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
       "name": "/book/",
       "label": "The book",
       "pageviews": 10,
@@ -145,6 +156,12 @@
       "visits": 90
     },
     {
+      "name": "instagram.com",
+      "label": "instagram.com",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
       "name": "www.facebook.com",
       "label": "www.facebook.com",
       "pageviews": 10,
@@ -155,8 +172,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 330,
-      "visits": 180
+      "pageviews": 340,
+      "visits": 190
     },
     {
       "name": "CA",
@@ -169,8 +186,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 270,
-      "visits": 130
+      "pageviews": 280,
+      "visits": 140
     },
     {
       "name": "desktop",
@@ -183,8 +200,8 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 150,
-      "visits": 70
+      "pageviews": 160,
+      "visits": 80
     },
     {
       "name": "Instagram",
