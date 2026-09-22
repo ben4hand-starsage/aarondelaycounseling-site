@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-20T16:03:46Z",
+  "generated_at": "2026-09-22T16:55:48Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 350,
-    "visits": 200
+    "pageviews": 370,
+    "visits": 220
   },
   "previous": {
     "pageviews": 0,
@@ -90,6 +90,11 @@
       "date": "2026-09-20",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-09-21",
+      "pageviews": 20,
+      "visits": 20
     }
   ],
   "pages": [
@@ -106,6 +111,12 @@
       "visits": 0
     },
     {
+      "name": "/free-b0da10/",
+      "label": "/free-b0da10/",
+      "pageviews": 30,
+      "visits": 30
+    },
+    {
       "name": "/playbooks/",
       "label": "Playbooks ($19)",
       "pageviews": 30,
@@ -120,12 +131,6 @@
     {
       "name": "/analytics",
       "label": "/analytics",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
-      "name": "/free-b0da10/",
-      "label": "/free-b0da10/",
       "pageviews": 10,
       "visits": 10
     },
@@ -158,8 +163,8 @@
     {
       "name": "instagram.com",
       "label": "instagram.com",
-      "pageviews": 10,
-      "visits": 10
+      "pageviews": 30,
+      "visits": 30
     },
     {
       "name": "www.facebook.com",
@@ -176,6 +181,12 @@
       "visits": 190
     },
     {
+      "name": "MY",
+      "label": "MY",
+      "pageviews": 20,
+      "visits": 20
+    },
+    {
       "name": "CA",
       "label": "CA",
       "pageviews": 10,
@@ -186,8 +197,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 280,
-      "visits": 140
+      "pageviews": 300,
+      "visits": 160
     },
     {
       "name": "desktop",
@@ -200,8 +211,8 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 160,
-      "visits": 80
+      "pageviews": 180,
+      "visits": 100
     },
     {
       "name": "Instagram",
