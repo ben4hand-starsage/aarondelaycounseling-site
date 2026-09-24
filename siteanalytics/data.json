@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-09-22T16:55:48Z",
+  "generated_at": "2026-09-24T17:09:12Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 370,
+    "pageviews": 380,
     "visits": 220
   },
   "previous": {
@@ -95,6 +95,11 @@
       "date": "2026-09-21",
       "pageviews": 20,
       "visits": 20
+    },
+    {
+      "date": "2026-09-24",
+      "pageviews": 10,
+      "visits": 0
     }
   ],
   "pages": [
@@ -111,6 +116,12 @@
       "visits": 0
     },
     {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 30,
+      "visits": 0
+    },
+    {
       "name": "/free-b0da10/",
       "label": "/free-b0da10/",
       "pageviews": 30,
@@ -121,12 +132,6 @@
       "label": "Playbooks ($19)",
       "pageviews": 30,
       "visits": 10
-    },
-    {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 20,
-      "visits": 0
     },
     {
       "name": "/analytics",
@@ -145,7 +150,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 150,
+      "pageviews": 160,
       "visits": 0
     },
     {
@@ -177,7 +182,7 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 340,
+      "pageviews": 350,
       "visits": 190
     },
     {
@@ -197,7 +202,7 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 300,
+      "pageviews": 310,
       "visits": 160
     },
     {
@@ -211,7 +216,7 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 180,
+      "pageviews": 190,
       "visits": 100
     },
     {
@@ -247,7 +252,7 @@
   ],
   "funnel": {
     "reset_views": 0,
-    "thanks_views": 20,
+    "thanks_views": 30,
     "rate": null
   }
 }
