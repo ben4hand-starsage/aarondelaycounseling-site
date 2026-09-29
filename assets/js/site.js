@@ -11,7 +11,7 @@ var SITE = {
      Account 2591010, form "Reset opt-in (site-wide)".                */
   FORM_ACTION: "https://assets.mailerlite.com/jsonp/2591010/forms/196633341769811899/subscribe",
 
-  /* Gumroad product URL for the $19 playbook.
+  /* Gumroad product URL for the $5 playbook.
      Looks like: https://aarondelay.gumroad.com/l/playbook         */
   GUMROAD_PLAYBOOK_URL: "https://shop.aarondelaycounseling.com/l/wrong-person",
 

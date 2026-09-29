@@ -12,7 +12,7 @@ Built on the Brand Field Guide v1.0 tokens (Fraunces + Montserrat, ink / cream /
 /reset/              Bare opt-in landing page. No nav, no exits, one form.
                      All Instagram DM traffic and church QR codes land here.
 /thanks/             Post-opt-in confirmation. Asks for a reply (trains the inbox).
-/playbooks/          The $19 playbook with Gumroad checkout + FAQ
+/playbooks/          The $5 playbook with Gumroad checkout + FAQ
 /speaking/           For pastors: what a marriage night is, what the church provides, how to book
 /book/               Saying "I Do" Everyday, with notify-me capture
 /404.html            Soft landing for stale links

@@ -27,7 +27,7 @@ ENV = os.path.join(ROOT, ".env")
 # The snapshot is generated, not authored, so it lives only in the deploy repo
 # - the same file the Actions workflow writes. Keeping a copy in DELAY/site
 # would be a second source of truth that sync_site.sh deliberately excludes.
-OUT = "/Users/benjaminforehand/Desktop/aarondelaycounseling-site/siteanalytics/data.json"
+OUT = "/Users/benjaminforehand/Desktop/CLAUDE/aarondelaycounseling-site/siteanalytics/data.json"
 
 ACCOUNT_TAG = "9452bc58f548c7b6593d7fd4945f2971"
 SITE_TAG = "99a9f55959984d91b395f573fabb3fe6"
@@ -43,7 +43,7 @@ PAGE_LABELS = {
     "/reset/": "Free reset (opt-in)",
     "/thanks/": "Reset delivered",
     "/counseling/": "Counseling & coaching",
-    "/playbooks/": "Playbooks ($19)",
+    "/playbooks/": "Playbooks ($5)",
     "/speaking/": "For churches",
     "/book/": "The book",
     "/coaching-thanks/": "Coaching enquiry sent",
