@@ -1,25 +1,20 @@
 {
-  "generated_at": "2026-09-29T18:04:22Z",
+  "generated_at": "2026-09-30T17:59:33Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 430,
-    "visits": 250
+    "pageviews": 400,
+    "visits": 220
   },
   "previous": {
-    "pageviews": 10,
-    "visits": 10
+    "pageviews": 50,
+    "visits": 40
   },
   "by_date": [
     {
-      "date": "2026-08-30",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
       "date": "2026-08-31",
-      "pageviews": 40,
-      "visits": 20
+      "pageviews": 10,
+      "visits": 0
     },
     {
       "date": "2026-09-01",
@@ -113,7 +108,7 @@
     },
     {
       "date": "2026-09-29",
-      "pageviews": 20,
+      "pageviews": 30,
       "visits": 10
     }
   ],
@@ -121,8 +116,8 @@
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 230,
-      "visits": 200
+      "pageviews": 210,
+      "visits": 170
     },
     {
       "name": "/counseling/",
@@ -145,7 +140,7 @@
     {
       "name": "/playbooks/",
       "label": "Playbooks ($5)",
-      "pageviews": 30,
+      "pageviews": 20,
       "visits": 10
     },
     {
@@ -171,14 +166,14 @@
     {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
-      "pageviews": 130,
-      "visits": 130
+      "pageviews": 110,
+      "visits": 110
     },
     {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 80,
-      "visits": 80
+      "pageviews": 70,
+      "visits": 70
     },
     {
       "name": "instagram.com",
@@ -197,8 +192,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 400,
-      "visits": 220
+      "pageviews": 370,
+      "visits": 190
     },
     {
       "name": "MY",
@@ -217,22 +212,22 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 370,
-      "visits": 200
+      "pageviews": 350,
+      "visits": 190
     },
     {
       "name": "desktop",
       "label": "desktop",
-      "pageviews": 60,
-      "visits": 50
+      "pageviews": 50,
+      "visits": 30
     }
   ],
   "browsers": [
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 240,
-      "visits": 140
+      "pageviews": 220,
+      "visits": 130
     },
     {
       "name": "Instagram",
@@ -241,16 +236,16 @@
       "visits": 10
     },
     {
-      "name": "Chrome",
-      "label": "Chrome",
-      "pageviews": 50,
-      "visits": 40
-    },
-    {
       "name": "MobileSafari",
       "label": "MobileSafari",
       "pageviews": 50,
       "visits": 40
+    },
+    {
+      "name": "Chrome",
+      "label": "Chrome",
+      "pageviews": 40,
+      "visits": 20
     },
     {
       "name": "Safari",
