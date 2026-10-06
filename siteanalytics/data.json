@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-10-05T20:33:16Z",
+  "generated_at": "2026-10-06T18:20:09Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 380,
-    "visits": 190
+    "pageviews": 360,
+    "visits": 200
   },
   "previous": {
-    "pageviews": 120,
-    "visits": 90
+    "pageviews": 0,
+    "visits": 0
   },
   "by_date": [
-    {
-      "date": "2026-09-06",
-      "pageviews": 30,
-      "visits": 0
-    },
     {
       "date": "2026-09-08",
       "pageviews": 10,
@@ -105,25 +100,24 @@
       "date": "2026-10-05",
       "pageviews": 20,
       "visits": 10
+    },
+    {
+      "date": "2026-10-06",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 200,
-      "visits": 150
+      "pageviews": 210,
+      "visits": 160
     },
     {
       "name": "/counseling/",
       "label": "Counseling & coaching",
-      "pageviews": 100,
-      "visits": 0
-    },
-    {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 30,
+      "pageviews": 80,
       "visits": 0
     },
     {
@@ -131,6 +125,12 @@
       "label": "/free-b0da10/",
       "pageviews": 30,
       "visits": 30
+    },
+    {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 20,
+      "visits": 0
     },
     {
       "name": "/playbooks/",
@@ -143,7 +143,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 190,
+      "pageviews": 160,
       "visits": 0
     },
     {
@@ -167,42 +167,17 @@
     {
       "name": "m.facebook.com",
       "label": "m.facebook.com",
-      "pageviews": 10,
-      "visits": 10
-    }
-  ],
-  "countries": [
-    {
-      "name": "US",
-      "label": "US",
-      "pageviews": 340,
-      "visits": 160
-    },
-    {
-      "name": "MY",
-      "label": "MY",
       "pageviews": 20,
       "visits": 20
-    },
-    {
-      "name": "CA",
-      "label": "CA",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
-      "name": "SG",
-      "label": "SG",
-      "pageviews": 10,
-      "visits": 0
     }
   ],
+  "countries": [],
   "devices": [
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 360,
-      "visits": 180
+      "pageviews": 340,
+      "visits": 190
     },
     {
       "name": "desktop",
@@ -215,20 +190,20 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 250,
+      "pageviews": 230,
       "visits": 130
-    },
-    {
-      "name": "Instagram",
-      "label": "Instagram",
-      "pageviews": 60,
-      "visits": 10
     },
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
+      "pageviews": 60,
+      "visits": 50
+    },
+    {
+      "name": "Instagram",
+      "label": "Instagram",
       "pageviews": 50,
-      "visits": 40
+      "visits": 10
     },
     {
       "name": "Chrome",
@@ -239,7 +214,7 @@
   ],
   "funnel": {
     "reset_views": 0,
-    "thanks_views": 30,
+    "thanks_views": 20,
     "rate": null
   }
 }
