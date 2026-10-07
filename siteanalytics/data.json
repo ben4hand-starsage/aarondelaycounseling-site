@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-10-06T18:20:09Z",
+  "generated_at": "2026-10-07T18:56:24Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 360,
+    "pageviews": 390,
     "visits": 200
   },
   "previous": {
-    "pageviews": 0,
-    "visits": 0
+    "pageviews": 150,
+    "visits": 90
   },
   "by_date": [
     {
@@ -105,19 +105,24 @@
       "date": "2026-10-06",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-10-07",
+      "pageviews": 30,
+      "visits": 0
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 210,
+      "pageviews": 220,
       "visits": 160
     },
     {
       "name": "/counseling/",
       "label": "Counseling & coaching",
-      "pageviews": 80,
+      "pageviews": 90,
       "visits": 0
     },
     {
@@ -137,13 +142,19 @@
       "label": "Playbooks ($5)",
       "pageviews": 20,
       "visits": 10
+    },
+    {
+      "name": "/reset/",
+      "label": "Free reset (opt-in)",
+      "pageviews": 10,
+      "visits": 0
     }
   ],
   "referrers": [
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 160,
+      "pageviews": 190,
       "visits": 0
     },
     {
@@ -171,12 +182,37 @@
       "visits": 20
     }
   ],
-  "countries": [],
+  "countries": [
+    {
+      "name": "US",
+      "label": "US",
+      "pageviews": 350,
+      "visits": 170
+    },
+    {
+      "name": "MY",
+      "label": "MY",
+      "pageviews": 20,
+      "visits": 20
+    },
+    {
+      "name": "CA",
+      "label": "CA",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "name": "SG",
+      "label": "SG",
+      "pageviews": 10,
+      "visits": 0
+    }
+  ],
   "devices": [
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 340,
+      "pageviews": 370,
       "visits": 190
     },
     {
@@ -194,16 +230,22 @@
       "visits": 130
     },
     {
+      "name": "Instagram",
+      "label": "Instagram",
+      "pageviews": 60,
+      "visits": 10
+    },
+    {
       "name": "MobileSafari",
       "label": "MobileSafari",
       "pageviews": 60,
       "visits": 50
     },
     {
-      "name": "Instagram",
-      "label": "Instagram",
-      "pageviews": 50,
-      "visits": 10
+      "name": "ChromeMobile",
+      "label": "ChromeMobile",
+      "pageviews": 20,
+      "visits": 0
     },
     {
       "name": "Chrome",
@@ -213,8 +255,8 @@
     }
   ],
   "funnel": {
-    "reset_views": 0,
+    "reset_views": 10,
     "thanks_views": 20,
-    "rate": null
+    "rate": 2.0
   }
 }
