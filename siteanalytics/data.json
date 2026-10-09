@@ -1,26 +1,16 @@
 {
-  "generated_at": "2026-10-07T18:56:24Z",
+  "generated_at": "2026-10-09T18:20:32Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 390,
-    "visits": 200
+    "pageviews": 400,
+    "visits": 190
   },
   "previous": {
-    "pageviews": 150,
-    "visits": 90
+    "pageviews": 190,
+    "visits": 130
   },
   "by_date": [
-    {
-      "date": "2026-09-08",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
-      "date": "2026-09-09",
-      "pageviews": 30,
-      "visits": 30
-    },
     {
       "date": "2026-09-11",
       "pageviews": 60,
@@ -110,14 +100,24 @@
       "date": "2026-10-07",
       "pageviews": 30,
       "visits": 0
+    },
+    {
+      "date": "2026-10-08",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "date": "2026-10-09",
+      "pageviews": 40,
+      "visits": 20
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 220,
-      "visits": 160
+      "pageviews": 210,
+      "visits": 150
     },
     {
       "name": "/counseling/",
@@ -126,16 +126,16 @@
       "visits": 0
     },
     {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 40,
+      "visits": 0
+    },
+    {
       "name": "/free-b0da10/",
       "label": "/free-b0da10/",
       "pageviews": 30,
       "visits": 30
-    },
-    {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 20,
-      "visits": 0
     },
     {
       "name": "/playbooks/",
@@ -154,7 +154,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 190,
+      "pageviews": 210,
       "visits": 0
     },
     {
@@ -164,8 +164,8 @@
       "visits": 110
     },
     {
-      "name": "(direct)",
-      "label": "(direct)",
+      "name": "m.facebook.com",
+      "label": "m.facebook.com",
       "pageviews": 40,
       "visits": 40
     },
@@ -176,18 +176,18 @@
       "visits": 30
     },
     {
-      "name": "m.facebook.com",
-      "label": "m.facebook.com",
-      "pageviews": 20,
-      "visits": 20
+      "name": "(direct)",
+      "label": "(direct)",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "countries": [
     {
       "name": "US",
       "label": "US",
-      "pageviews": 350,
-      "visits": 170
+      "pageviews": 360,
+      "visits": 160
     },
     {
       "name": "MY",
@@ -212,21 +212,21 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 370,
+      "pageviews": 390,
       "visits": 190
     },
     {
       "name": "desktop",
       "label": "desktop",
-      "pageviews": 20,
-      "visits": 10
+      "pageviews": 10,
+      "visits": 0
     }
   ],
   "browsers": [
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 230,
+      "pageviews": 250,
       "visits": 130
     },
     {
@@ -250,13 +250,13 @@
     {
       "name": "Chrome",
       "label": "Chrome",
-      "pageviews": 20,
-      "visits": 10
+      "pageviews": 10,
+      "visits": 0
     }
   ],
   "funnel": {
     "reset_views": 10,
-    "thanks_views": 20,
-    "rate": 2.0
+    "thanks_views": 40,
+    "rate": 4.0
   }
 }
