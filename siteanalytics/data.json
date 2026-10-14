@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T19:15:03Z",
+  "generated_at": "2026-10-14T17:08:02Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
@@ -228,7 +228,38 @@
       "visits": 0
     }
   ],
-  "browsers": [],
+  "browsers": [
+    {
+      "name": "Unknown",
+      "label": "Unknown",
+      "pageviews": 230,
+      "visits": 120
+    },
+    {
+      "name": "MobileSafari",
+      "label": "MobileSafari",
+      "pageviews": 60,
+      "visits": 50
+    },
+    {
+      "name": "ChromeMobile",
+      "label": "ChromeMobile",
+      "pageviews": 30,
+      "visits": 10
+    },
+    {
+      "name": "Instagram",
+      "label": "Instagram",
+      "pageviews": 20,
+      "visits": 0
+    },
+    {
+      "name": "Chrome",
+      "label": "Chrome",
+      "pageviews": 10,
+      "visits": 0
+    }
+  ],
   "funnel": {
     "reset_views": 20,
     "thanks_views": 40,
