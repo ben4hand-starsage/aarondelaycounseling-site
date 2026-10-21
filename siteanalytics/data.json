@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-20T17:00:43Z",
+  "generated_at": "2026-10-21T17:09:32Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 300,
-    "visits": 160
+    "pageviews": 310,
+    "visits": 170
   },
   "previous": {
     "pageviews": 350,
@@ -90,51 +90,117 @@
       "date": "2026-10-18",
       "pageviews": 20,
       "visits": 20
+    },
+    {
+      "date": "2026-10-21",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 300,
-      "visits": 300
+      "pageviews": 180,
+      "visits": 150
+    },
+    {
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
+      "pageviews": 50,
+      "visits": 0
+    },
+    {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 40,
+      "visits": 0
     },
     {
       "name": "/reset/",
       "label": "Free reset (opt-in)",
-      "pageviews": 100,
+      "pageviews": 20,
       "visits": 0
+    },
+    {
+      "name": "/free-b0da10/",
+      "label": "/free-b0da10/",
+      "pageviews": 20,
+      "visits": 20
     }
   ],
   "referrers": [
     {
-      "name": "m.facebook.com",
-      "label": "m.facebook.com",
-      "pageviews": 200,
-      "visits": 200
-    },
-    {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 100,
+      "pageviews": 140,
       "visits": 0
     },
     {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
-      "pageviews": 100,
-      "visits": 100
+      "pageviews": 90,
+      "visits": 90
+    },
+    {
+      "name": "m.facebook.com",
+      "label": "m.facebook.com",
+      "pageviews": 50,
+      "visits": 50
+    },
+    {
+      "name": "instagram.com",
+      "label": "instagram.com",
+      "pageviews": 20,
+      "visits": 20
+    },
+    {
+      "name": "(direct)",
+      "label": "(direct)",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "countries": [
     {
       "name": "US",
       "label": "US",
-      "pageviews": 400,
-      "visits": 300
+      "pageviews": 270,
+      "visits": 150
+    },
+    {
+      "name": "MY",
+      "label": "MY",
+      "pageviews": 20,
+      "visits": 20
+    },
+    {
+      "name": "ZA",
+      "label": "ZA",
+      "pageviews": 10,
+      "visits": 0
+    },
+    {
+      "name": "SG",
+      "label": "SG",
+      "pageviews": 10,
+      "visits": 0
     }
   ],
-  "devices": [],
+  "devices": [
+    {
+      "name": "mobile",
+      "label": "mobile",
+      "pageviews": 290,
+      "visits": 160
+    },
+    {
+      "name": "desktop",
+      "label": "desktop",
+      "pageviews": 20,
+      "visits": 10
+    }
+  ],
   "browsers": [
     {
       "name": "Unknown",
@@ -157,8 +223,8 @@
     {
       "name": "Chrome",
       "label": "Chrome",
-      "pageviews": 10,
-      "visits": 0
+      "pageviews": 20,
+      "visits": 10
     },
     {
       "name": "Instagram",
@@ -168,8 +234,8 @@
     }
   ],
   "funnel": {
-    "reset_views": 100,
-    "thanks_views": 0,
-    "rate": 0.0
+    "reset_views": 20,
+    "thanks_views": 40,
+    "rate": 2.0
   }
 }
