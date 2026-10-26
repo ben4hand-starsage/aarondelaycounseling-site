@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-10-25T16:14:28Z",
+  "generated_at": "2026-10-26T18:40:08Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 280,
-    "visits": 140
+    "pageviews": 320,
+    "visits": 180
   },
   "previous": {
     "pageviews": 400,
@@ -85,14 +85,19 @@
       "date": "2026-10-22",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-10-26",
+      "pageviews": 40,
+      "visits": 40
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 160,
-      "visits": 130
+      "pageviews": 200,
+      "visits": 170
     },
     {
       "name": "/counseling/",
@@ -129,8 +134,8 @@
     {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
-      "pageviews": 70,
-      "visits": 70
+      "pageviews": 90,
+      "visits": 90
     },
     {
       "name": "m.facebook.com",
@@ -141,8 +146,8 @@
     {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 20,
-      "visits": 20
+      "pageviews": 40,
+      "visits": 40
     }
   ],
   "countries": [
@@ -153,8 +158,32 @@
       "visits": 130
     },
     {
+      "name": "GB",
+      "label": "GB",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "name": "FR",
+      "label": "FR",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
       "name": "CN",
       "label": "CN",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "name": "AU",
+      "label": "AU",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "name": "MY",
+      "label": "MY",
       "pageviews": 10,
       "visits": 10
     },
@@ -175,8 +204,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 260,
-      "visits": 130
+      "pageviews": 300,
+      "visits": 170
     },
     {
       "name": "desktop",
@@ -189,14 +218,14 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 150,
-      "visits": 60
+      "pageviews": 170,
+      "visits": 80
     },
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 60,
-      "visits": 50
+      "pageviews": 80,
+      "visits": 70
     },
     {
       "name": "ChromeMobile",
