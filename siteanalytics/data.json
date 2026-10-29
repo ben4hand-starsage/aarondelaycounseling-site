@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-10-28T18:19:55Z",
+  "generated_at": "2026-10-29T18:27:01Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 300,
+    "pageviews": 290,
     "visits": 170
   },
   "previous": {
-    "pageviews": 420,
+    "pageviews": 430,
     "visits": 250
   },
   "by_date": [
     {
       "date": "2026-09-29",
-      "pageviews": 30,
-      "visits": 10
+      "pageviews": 10,
+      "visits": 0
     },
     {
       "date": "2026-10-01",
@@ -85,6 +85,11 @@
       "date": "2026-10-26",
       "pageviews": 40,
       "visits": 40
+    },
+    {
+      "date": "2026-10-29",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
@@ -103,7 +108,7 @@
     {
       "name": "/counseling/",
       "label": "Counseling & coaching",
-      "pageviews": 40,
+      "pageviews": 30,
       "visits": 0
     },
     {
@@ -123,14 +128,14 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 130,
+      "pageviews": 120,
       "visits": 0
     },
     {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
-      "pageviews": 80,
-      "visits": 80
+      "pageviews": 70,
+      "visits": 70
     },
     {
       "name": "m.facebook.com",
@@ -143,13 +148,19 @@
       "label": "(direct)",
       "pageviews": 40,
       "visits": 40
+    },
+    {
+      "name": "www.facebook.com",
+      "label": "www.facebook.com",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "countries": [
     {
       "name": "US",
       "label": "US",
-      "pageviews": 230,
+      "pageviews": 220,
       "visits": 120
     },
     {
@@ -199,13 +210,19 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 280,
-      "visits": 160
+      "pageviews": 260,
+      "visits": 150
     },
     {
       "name": "desktop",
       "label": "desktop",
       "pageviews": 20,
+      "visits": 10
+    },
+    {
+      "name": "tablet",
+      "label": "tablet",
+      "pageviews": 10,
       "visits": 10
     }
   ],
@@ -213,7 +230,7 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 160,
+      "pageviews": 150,
       "visits": 70
     },
     {
