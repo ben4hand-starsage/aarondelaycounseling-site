@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-10-29T18:27:01Z",
+  "generated_at": "2026-10-30T17:59:24Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
     "pageviews": 290,
-    "visits": 170
+    "visits": 180
   },
   "previous": {
-    "pageviews": 430,
-    "visits": 250
+    "pageviews": 400,
+    "visits": 220
   },
   "by_date": [
-    {
-      "date": "2026-09-29",
-      "pageviews": 10,
-      "visits": 0
-    },
     {
       "date": "2026-10-01",
       "pageviews": 20,
@@ -88,15 +83,15 @@
     },
     {
       "date": "2026-10-29",
-      "pageviews": 10,
-      "visits": 10
+      "pageviews": 20,
+      "visits": 20
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 190,
+      "pageviews": 180,
       "visits": 160
     },
     {
@@ -118,6 +113,12 @@
       "visits": 0
     },
     {
+      "name": "/websiteanalytics",
+      "label": "/websiteanalytics",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
       "name": "/playbooks/",
       "label": "Playbooks ($5)",
       "pageviews": 10,
@@ -128,7 +129,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 120,
+      "pageviews": 110,
       "visits": 0
     },
     {
@@ -146,8 +147,8 @@
     {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 40,
-      "visits": 40
+      "pageviews": 50,
+      "visits": 50
     },
     {
       "name": "www.facebook.com",
@@ -161,7 +162,7 @@
       "name": "US",
       "label": "US",
       "pageviews": 220,
-      "visits": 120
+      "visits": 130
     },
     {
       "name": "GB",
@@ -217,7 +218,7 @@
       "name": "desktop",
       "label": "desktop",
       "pageviews": 20,
-      "visits": 10
+      "visits": 20
     },
     {
       "name": "tablet",
@@ -249,7 +250,7 @@
       "name": "Chrome",
       "label": "Chrome",
       "pageviews": 20,
-      "visits": 10
+      "visits": 20
     },
     {
       "name": "Instagram",
