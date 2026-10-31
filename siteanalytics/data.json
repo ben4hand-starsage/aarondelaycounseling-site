@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-30T17:59:24Z",
+  "generated_at": "2026-10-31T17:14:27Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 290,
+    "pageviews": 270,
     "visits": 180
   },
   "previous": {
@@ -11,11 +11,6 @@
     "visits": 220
   },
   "by_date": [
-    {
-      "date": "2026-10-01",
-      "pageviews": 20,
-      "visits": 0
-    },
     {
       "date": "2026-10-02",
       "pageviews": 10,
@@ -91,7 +86,7 @@
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 180,
+      "pageviews": 170,
       "visits": 160
     },
     {
@@ -101,14 +96,14 @@
       "visits": 0
     },
     {
-      "name": "/counseling/",
-      "label": "Counseling & coaching",
-      "pageviews": 30,
+      "name": "/reset/",
+      "label": "Free reset (opt-in)",
+      "pageviews": 20,
       "visits": 0
     },
     {
-      "name": "/reset/",
-      "label": "Free reset (opt-in)",
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
       "pageviews": 20,
       "visits": 0
     },
@@ -129,7 +124,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 110,
+      "pageviews": 90,
       "visits": 0
     },
     {
@@ -161,7 +156,7 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 220,
+      "pageviews": 210,
       "visits": 130
     },
     {
@@ -199,19 +194,13 @@
       "label": "ZA",
       "pageviews": 10,
       "visits": 0
-    },
-    {
-      "name": "SG",
-      "label": "SG",
-      "pageviews": 10,
-      "visits": 0
     }
   ],
   "devices": [
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 260,
+      "pageviews": 240,
       "visits": 150
     },
     {
@@ -231,7 +220,7 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 150,
+      "pageviews": 130,
       "visits": 70
     },
     {
