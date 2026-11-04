@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-11-02T21:41:54Z",
+  "generated_at": "2026-11-04T19:43:07Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 290,
-    "visits": 200
+    "pageviews": 270,
+    "visits": 190
   },
   "previous": {
     "pageviews": 380,
-    "visits": 200
+    "visits": 190
   },
   "by_date": [
-    {
-      "date": "2026-10-05",
-      "pageviews": 20,
-      "visits": 10
-    },
     {
       "date": "2026-10-06",
       "pageviews": 10,
@@ -96,13 +91,13 @@
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 190,
-      "visits": 180
+      "pageviews": 180,
+      "visits": 170
     },
     {
       "name": "/thanks/",
       "label": "Reset delivered",
-      "pageviews": 40,
+      "pageviews": 30,
       "visits": 0
     },
     {
@@ -134,7 +129,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 90,
+      "pageviews": 80,
       "visits": 0
     },
     {
@@ -146,8 +141,8 @@
     {
       "name": "m.facebook.com",
       "label": "m.facebook.com",
-      "pageviews": 60,
-      "visits": 60
+      "pageviews": 50,
+      "visits": 50
     },
     {
       "name": "(direct)",
@@ -166,8 +161,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 230,
-      "visits": 150
+      "pageviews": 210,
+      "visits": 140
     },
     {
       "name": "GB",
@@ -210,8 +205,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 260,
-      "visits": 170
+      "pageviews": 240,
+      "visits": 160
     },
     {
       "name": "desktop",
@@ -230,14 +225,14 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 120,
+      "pageviews": 110,
       "visits": 60
     },
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 80,
-      "visits": 80
+      "pageviews": 70,
+      "visits": 70
     },
     {
       "name": "ChromeMobile",
@@ -272,7 +267,7 @@
   ],
   "funnel": {
     "reset_views": 20,
-    "thanks_views": 40,
-    "rate": 2.0
+    "thanks_views": 30,
+    "rate": 1.5
   }
 }
