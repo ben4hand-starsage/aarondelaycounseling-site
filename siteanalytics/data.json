@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-11-04T19:43:07Z",
+  "generated_at": "2026-11-05T19:54:50Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
     "pageviews": 270,
-    "visits": 190
+    "visits": 180
   },
   "previous": {
-    "pageviews": 380,
-    "visits": 190
+    "pageviews": 360,
+    "visits": 200
   },
   "by_date": [
-    {
-      "date": "2026-10-06",
-      "pageviews": 10,
-      "visits": 10
-    },
     {
       "date": "2026-10-07",
       "pageviews": 30,
@@ -85,14 +80,19 @@
       "date": "2026-11-02",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-11-05",
+      "pageviews": 10,
+      "visits": 0
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 180,
-      "visits": 170
+      "pageviews": 170,
+      "visits": 160
     },
     {
       "name": "/thanks/",
@@ -101,14 +101,14 @@
       "visits": 0
     },
     {
-      "name": "/reset/",
-      "label": "Free reset (opt-in)",
-      "pageviews": 20,
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
+      "pageviews": 30,
       "visits": 0
     },
     {
-      "name": "/counseling/",
-      "label": "Counseling & coaching",
+      "name": "/reset/",
+      "label": "Free reset (opt-in)",
       "pageviews": 20,
       "visits": 0
     },
@@ -129,7 +129,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 80,
+      "pageviews": 90,
       "visits": 0
     },
     {
@@ -139,16 +139,16 @@
       "visits": 70
     },
     {
-      "name": "m.facebook.com",
-      "label": "m.facebook.com",
-      "pageviews": 50,
-      "visits": 50
-    },
-    {
       "name": "(direct)",
       "label": "(direct)",
       "pageviews": 50,
       "visits": 50
+    },
+    {
+      "name": "m.facebook.com",
+      "label": "m.facebook.com",
+      "pageviews": 40,
+      "visits": 40
     },
     {
       "name": "www.facebook.com",
@@ -162,7 +162,7 @@
       "name": "US",
       "label": "US",
       "pageviews": 210,
-      "visits": 140
+      "visits": 130
     },
     {
       "name": "GB",
@@ -206,7 +206,7 @@
       "name": "mobile",
       "label": "mobile",
       "pageviews": 240,
-      "visits": 160
+      "visits": 150
     },
     {
       "name": "desktop",
@@ -232,7 +232,7 @@
       "name": "MobileSafari",
       "label": "MobileSafari",
       "pageviews": 70,
-      "visits": 70
+      "visits": 60
     },
     {
       "name": "ChromeMobile",
