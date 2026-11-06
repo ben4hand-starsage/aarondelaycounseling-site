@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-11-05T19:54:50Z",
+  "generated_at": "2026-11-06T19:22:13Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 270,
-    "visits": 180
+    "pageviews": 250,
+    "visits": 190
   },
   "previous": {
-    "pageviews": 360,
+    "pageviews": 390,
     "visits": 200
   },
   "by_date": [
-    {
-      "date": "2026-10-07",
-      "pageviews": 30,
-      "visits": 0
-    },
     {
       "date": "2026-10-08",
       "pageviews": 10,
@@ -85,13 +80,18 @@
       "date": "2026-11-05",
       "pageviews": 10,
       "visits": 0
+    },
+    {
+      "date": "2026-11-06",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 170,
+      "pageviews": 160,
       "visits": 160
     },
     {
@@ -101,14 +101,14 @@
       "visits": 0
     },
     {
-      "name": "/counseling/",
-      "label": "Counseling & coaching",
-      "pageviews": 30,
-      "visits": 0
-    },
-    {
       "name": "/reset/",
       "label": "Free reset (opt-in)",
+      "pageviews": 20,
+      "visits": 10
+    },
+    {
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
       "pageviews": 20,
       "visits": 0
     },
@@ -127,22 +127,22 @@
   ],
   "referrers": [
     {
-      "name": "aarondelaycounseling.com",
-      "label": "aarondelaycounseling.com",
-      "pageviews": 90,
-      "visits": 0
-    },
-    {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
       "pageviews": 70,
       "visits": 70
     },
     {
+      "name": "aarondelaycounseling.com",
+      "label": "aarondelaycounseling.com",
+      "pageviews": 60,
+      "visits": 0
+    },
+    {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 50,
-      "visits": 50
+      "pageviews": 60,
+      "visits": 60
     },
     {
       "name": "m.facebook.com",
@@ -161,8 +161,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 210,
-      "visits": 130
+      "pageviews": 190,
+      "visits": 140
     },
     {
       "name": "GB",
@@ -205,8 +205,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 240,
-      "visits": 150
+      "pageviews": 220,
+      "visits": 160
     },
     {
       "name": "desktop",
@@ -231,14 +231,8 @@
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 70,
-      "visits": 60
-    },
-    {
-      "name": "ChromeMobile",
-      "label": "ChromeMobile",
-      "pageviews": 30,
-      "visits": 10
+      "pageviews": 80,
+      "visits": 70
     },
     {
       "name": "Chrome",
@@ -247,9 +241,15 @@
       "visits": 20
     },
     {
+      "name": "ChromeMobile",
+      "label": "ChromeMobile",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
       "name": "Instagram",
       "label": "Instagram",
-      "pageviews": 20,
+      "pageviews": 10,
       "visits": 10
     },
     {
