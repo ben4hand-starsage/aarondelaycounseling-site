@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-11-11T19:33:42Z",
+  "generated_at": "2026-11-12T19:52:53Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 200,
-    "visits": 170
+    "pageviews": 220,
+    "visits": 190
   },
   "previous": {
-    "pageviews": 370,
-    "visits": 190
+    "pageviews": 350,
+    "visits": 180
   },
   "by_date": [
     {
@@ -75,26 +75,36 @@
       "date": "2026-11-10",
       "pageviews": 10,
       "visits": 10
+    },
+    {
+      "date": "2026-11-11",
+      "pageviews": 10,
+      "visits": 10
+    },
+    {
+      "date": "2026-11-12",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "pages": [
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 120,
-      "visits": 120
+      "pageviews": 130,
+      "visits": 130
+    },
+    {
+      "name": "/counseling/",
+      "label": "Counseling & coaching",
+      "pageviews": 30,
+      "visits": 10
     },
     {
       "name": "/reset/",
       "label": "Free reset (opt-in)",
       "pageviews": 20,
       "visits": 20
-    },
-    {
-      "name": "/counseling/",
-      "label": "Counseling & coaching",
-      "pageviews": 20,
-      "visits": 0
     },
     {
       "name": "/thanks/",
@@ -143,22 +153,28 @@
     {
       "name": "m.facebook.com",
       "label": "m.facebook.com",
-      "pageviews": 20,
-      "visits": 20
+      "pageviews": 30,
+      "visits": 30
     },
     {
       "name": "www.facebook.com",
       "label": "www.facebook.com",
       "pageviews": 20,
       "visits": 20
+    },
+    {
+      "name": "www.google.com",
+      "label": "www.google.com",
+      "pageviews": 10,
+      "visits": 10
     }
   ],
   "countries": [
     {
       "name": "US",
       "label": "US",
-      "pageviews": 150,
-      "visits": 120
+      "pageviews": 170,
+      "visits": 140
     },
     {
       "name": "GB",
@@ -195,14 +211,14 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 160,
-      "visits": 130
+      "pageviews": 170,
+      "visits": 140
     },
     {
       "name": "desktop",
       "label": "desktop",
-      "pageviews": 30,
-      "visits": 30
+      "pageviews": 40,
+      "visits": 40
     },
     {
       "name": "tablet",
@@ -215,8 +231,8 @@
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 70,
-      "visits": 60
+      "pageviews": 80,
+      "visits": 70
     },
     {
       "name": "Unknown",
@@ -227,8 +243,8 @@
     {
       "name": "Chrome",
       "label": "Chrome",
-      "pageviews": 30,
-      "visits": 30
+      "pageviews": 40,
+      "visits": 40
     },
     {
       "name": "Instagram",
