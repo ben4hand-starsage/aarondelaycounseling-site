@@ -1,21 +1,16 @@
 {
-  "generated_at": "2026-11-16T21:58:44Z",
+  "generated_at": "2026-11-17T20:52:29Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 240,
-    "visits": 210
+    "pageviews": 220,
+    "visits": 190
   },
   "previous": {
-    "pageviews": 300,
-    "visits": 150
+    "pageviews": 320,
+    "visits": 170
   },
   "by_date": [
-    {
-      "date": "2026-10-18",
-      "pageviews": 20,
-      "visits": 20
-    },
     {
       "date": "2026-10-21",
       "pageviews": 20,
@@ -96,8 +91,8 @@
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 140,
-      "visits": 140
+      "pageviews": 120,
+      "visits": 120
     },
     {
       "name": "/reset/",
@@ -146,12 +141,6 @@
     {
       "name": "l.instagram.com",
       "label": "l.instagram.com",
-      "pageviews": 50,
-      "visits": 50
-    },
-    {
-      "name": "m.facebook.com",
-      "label": "m.facebook.com",
       "pageviews": 40,
       "visits": 40
     },
@@ -160,6 +149,12 @@
       "label": "aarondelaycounseling.com",
       "pageviews": 30,
       "visits": 0
+    },
+    {
+      "name": "m.facebook.com",
+      "label": "m.facebook.com",
+      "pageviews": 30,
+      "visits": 30
     },
     {
       "name": "www.facebook.com",
@@ -184,8 +179,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 190,
-      "visits": 160
+      "pageviews": 170,
+      "visits": 140
     },
     {
       "name": "GB",
@@ -222,8 +217,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 190,
-      "visits": 160
+      "pageviews": 170,
+      "visits": 140
     },
     {
       "name": "desktop",
@@ -242,14 +237,14 @@
     {
       "name": "MobileSafari",
       "label": "MobileSafari",
-      "pageviews": 90,
-      "visits": 80
+      "pageviews": 80,
+      "visits": 70
     },
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 60,
-      "visits": 50
+      "pageviews": 50,
+      "visits": 40
     },
     {
       "name": "Chrome",
