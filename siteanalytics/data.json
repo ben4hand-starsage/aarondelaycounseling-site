@@ -1,20 +1,20 @@
 {
-  "generated_at": "2026-11-19T20:32:10Z",
+  "generated_at": "2026-11-20T20:12:20Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 230,
-    "visits": 200
+    "pageviews": 220,
+    "visits": 190
   },
   "previous": {
-    "pageviews": 300,
-    "visits": 160
+    "pageviews": 310,
+    "visits": 170
   },
   "by_date": [
     {
       "date": "2026-10-21",
-      "pageviews": 20,
-      "visits": 10
+      "pageviews": 10,
+      "visits": 0
     },
     {
       "date": "2026-10-22",
@@ -96,8 +96,8 @@
     {
       "name": "/",
       "label": "Home",
-      "pageviews": 130,
-      "visits": 130
+      "pageviews": 120,
+      "visits": 120
     },
     {
       "name": "/reset/",
@@ -140,8 +140,8 @@
     {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 80,
-      "visits": 80
+      "pageviews": 70,
+      "visits": 70
     },
     {
       "name": "m.facebook.com",
@@ -184,8 +184,8 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 180,
-      "visits": 150
+      "pageviews": 170,
+      "visits": 140
     },
     {
       "name": "GB",
@@ -228,8 +228,8 @@
     {
       "name": "desktop",
       "label": "desktop",
-      "pageviews": 40,
-      "visits": 40
+      "pageviews": 30,
+      "visits": 30
     },
     {
       "name": "tablet",
@@ -254,8 +254,8 @@
     {
       "name": "Chrome",
       "label": "Chrome",
-      "pageviews": 40,
-      "visits": 40
+      "pageviews": 30,
+      "visits": 30
     },
     {
       "name": "Instagram",
