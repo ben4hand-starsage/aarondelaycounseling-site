@@ -1,26 +1,16 @@
 {
-  "generated_at": "2026-11-20T20:12:20Z",
+  "generated_at": "2026-11-21T19:12:00Z",
   "window_days": 30,
   "site": "aarondelaycounseling.com",
   "totals": {
-    "pageviews": 220,
-    "visits": 190
+    "pageviews": 200,
+    "visits": 180
   },
   "previous": {
     "pageviews": 310,
-    "visits": 170
+    "visits": 160
   },
   "by_date": [
-    {
-      "date": "2026-10-21",
-      "pageviews": 10,
-      "visits": 0
-    },
-    {
-      "date": "2026-10-22",
-      "pageviews": 10,
-      "visits": 10
-    },
     {
       "date": "2026-10-26",
       "pageviews": 40,
@@ -106,16 +96,16 @@
       "visits": 30
     },
     {
-      "name": "/thanks/",
-      "label": "Reset delivered",
-      "pageviews": 20,
-      "visits": 0
-    },
-    {
       "name": "/counseling/",
       "label": "Counseling & coaching",
       "pageviews": 20,
       "visits": 10
+    },
+    {
+      "name": "/thanks/",
+      "label": "Reset delivered",
+      "pageviews": 10,
+      "visits": 0
     },
     {
       "name": "/websiteanalytics",
@@ -128,20 +118,14 @@
       "label": "For churches",
       "pageviews": 10,
       "visits": 10
-    },
-    {
-      "name": "/playbooks/",
-      "label": "Playbooks ($5)",
-      "pageviews": 10,
-      "visits": 10
     }
   ],
   "referrers": [
     {
       "name": "(direct)",
       "label": "(direct)",
-      "pageviews": 70,
-      "visits": 70
+      "pageviews": 60,
+      "visits": 60
     },
     {
       "name": "m.facebook.com",
@@ -158,7 +142,7 @@
     {
       "name": "aarondelaycounseling.com",
       "label": "aarondelaycounseling.com",
-      "pageviews": 30,
+      "pageviews": 20,
       "visits": 0
     },
     {
@@ -184,7 +168,7 @@
     {
       "name": "US",
       "label": "US",
-      "pageviews": 170,
+      "pageviews": 160,
       "visits": 140
     },
     {
@@ -196,12 +180,6 @@
     {
       "name": "FR",
       "label": "FR",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
-      "name": "CN",
-      "label": "CN",
       "pageviews": 10,
       "visits": 10
     },
@@ -222,8 +200,8 @@
     {
       "name": "mobile",
       "label": "mobile",
-      "pageviews": 180,
-      "visits": 150
+      "pageviews": 160,
+      "visits": 140
     },
     {
       "name": "desktop",
@@ -248,7 +226,7 @@
     {
       "name": "Unknown",
       "label": "Unknown",
-      "pageviews": 50,
+      "pageviews": 40,
       "visits": 40
     },
     {
@@ -264,12 +242,6 @@
       "visits": 20
     },
     {
-      "name": "ChromeMobileWebview",
-      "label": "ChromeMobileWebview",
-      "pageviews": 10,
-      "visits": 10
-    },
-    {
       "name": "Facebook",
       "label": "Facebook",
       "pageviews": 10,
@@ -278,7 +250,7 @@
   ],
   "funnel": {
     "reset_views": 30,
-    "thanks_views": 20,
-    "rate": 0.6667
+    "thanks_views": 10,
+    "rate": 0.3333
   }
 }
